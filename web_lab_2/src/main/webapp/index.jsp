@@ -1,0 +1,189 @@
+<%@ page contentType="text/html;charset=utf-8" %>
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>lab_2</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    
+    <body>
+        <header>
+            <h1 class="header-title">Лабораторная работа №1 по Веб-программированию.</h1>
+            <p class="header-content">
+                <span class="line-title">Вариант:</span> 2215
+                <br>
+                <span class="line-title">Студент:&nbsp;</span> Монахов максим Денисович
+                <br>
+                <span class="line-title">Группа:&nbsp;&nbsp;&nbsp;</span> P3211
+                
+            </p>
+        </header>
+        
+        <main>
+            <article>
+                <figure>
+                    <img src="resources/figure.png" alt="The picture shows the figure genereated for my lab's variant.">
+                    <figcaption>The figure shows a graph generated for my lab's variant.</figcaption>
+                </figure>
+
+                
+                
+                <form id="form">
+                    
+                    <section class="content">
+                        
+                        <section class="choose-values">
+
+                            <span class="line-title">Значение Х:</span>
+
+                            <section class="checkbox-values x">
+
+                                <input id="x-4" value="-4" name="x" type="checkbox">
+                                <label for="x-4">-4</label>
+
+
+                                <input id="x-3" value="-3" name="x" type="checkbox">
+                                <label for="x-3">-3</label>
+
+
+                                <input id="x-2" value="-2" name="x" type="checkbox">
+                                <label for="x-2">-2</label>
+
+
+                                <input id="x-1" value="-1" name="x" type="checkbox">
+                                <label for="x-1">-1</label>
+
+
+                                <input id="x0" value="0" name="x" type="checkbox">
+                                <label for="x0">0</label>
+
+
+                                <input id="x1" value="1" name="x" type="checkbox">
+                                <label for="x1">1</label>
+
+
+                                <input id="x2" value="2" name="x" type="checkbox">
+                                <label for="x2">2</label>
+
+
+                                <input id="x3" value="3" name="x" type="checkbox">
+                                <label for="x3">3</label>
+
+
+                                <input id="x4" value="4" name="x" type="checkbox">
+                                <label for="x4">4</label>
+                            </section>
+
+                        </section>
+
+
+                        <section class="choose-values">
+                            <span class="line-title">Значение Y (из диапазона {-5..5}):</span>
+                            <input class="checkbox-values y" type="text" name="y" pattern="-{0,1}[0-9]+[\.,]{0,1}[0-9]*" required title="Введите целое число или десятичную дробь. В качестве дробного разделителя используйте запятую ',' или точку '.'">
+                        </section>
+
+
+                        <section class="choose-values">
+
+                            <span class="line-title">Значение R:</span>
+
+                            <section class="checkbox-values r">
+                                
+                                <input id="r1" value="1" name="r" type="checkbox">
+                                <label for="r1">1</label>
+                                
+                                <input id="r2" value="2" name="r" type="checkbox">
+                                <label for="r2">2</label>
+                                
+                                <input id="r3" value="3" name="r" type="checkbox">
+                                <label for="r3">3</label>
+
+                                <input id="r4" value="4" name="r" type="checkbox">
+                                <label for="r4">4</label>
+                                
+                                <input id="r5" value="5" name="r" type="checkbox">
+                                <label for="r5">5</label>
+                            </section>
+
+                        </section>
+                        
+                    </section>
+
+
+                    <br>
+                    <input type="submit" id="submit-button" value="ПРОВЕРИТЬ">
+
+
+                    <section class="message-box">
+                        <p class="message-box-content"></p>
+                    </section>
+                    
+                </form>
+
+            </article>
+            
+            
+            
+            
+            <article>
+                
+                <table id="result-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">X</th>
+                            <th scope="col">Y</th>
+                            <th scope="col">R</th>
+                            <th scope="col">Точка попала в область</th>
+                            <th scope="col">Время проверки</th>
+                            <th scope="col">Время работы скрипта (в мс)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+<!--                        <tr>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td class="server-answer-yes">1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td class="server-answer-no">1</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>1</td>-->
+<!--                        </tr>-->
+                    </tbody>
+                </table>
+
+            </article>
+            
+            
+        </main>
+        
+        
+        <footer>
+            <p class="footer-text"> View code on GitHub</p>
+            <a href="https://github.com/ITMO-Web-2nd-year/web_lab_1" target="_blank"> <img class="github-link-img" src="resources/GitHub-Mark-32px.png"> </a>
+        </footer>
+        
+<!--
+        <script>
+            $(document).ready
+        </script>
+-->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
