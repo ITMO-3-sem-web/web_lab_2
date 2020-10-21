@@ -17,7 +17,7 @@ public class MainServlet extends HttpServlet {
 
 //        req.getRequestDispatcher("firstPage.jsp").forward(req, resp);
 
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        req.getRequestDispatcher("index.html").forward(req, resp);
 
 
 //        PrintWriter out = resp.getWriter();
