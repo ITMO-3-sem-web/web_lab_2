@@ -14,21 +14,38 @@
     
     <body>
         <header>
-            <h1 class="header-title">Лабораторная работа №1 по Веб-программированию.</h1>
+            <h1 class="header-title">Лабораторная работа №2 по Веб-программированию.</h1>
             <p class="header-content">
-                <span class="line-title">Вариант:</span> 2215
+                <span class="line-title">Вариант:</span> 4553
                 <br>
-                <span class="line-title">Студент:&nbsp;</span> Монахов максим Денисович
+                <span class="line-title">Студенты:&nbsp;</span> Арина Стенина и Максим Монахов
                 <br>
-                <span class="line-title">Группа:&nbsp;&nbsp;&nbsp;</span> P3211
+                <span class="line-title">Группа:&nbsp;&nbsp;&nbsp;  </span> P3211
                 
             </p>
         </header>
         
         <main>
             <article>
-                <canvas id="canvass" width="500" height="500"><p>Your browser doesn't support canvas.</p></canvas>
+                
+                    
+                  <canvas id="canvass" width="340" height="340">    <p>Your browser doesn't support canvas.</p>   </canvas>
+                    
+                <section class="coordinates-view">
+                    <p>
+                        X : &nbsp;<span class="x">?</span>
+                        <br>
+                        Y : &nbsp;<span class="y">?</span>
+                    </p>
+                
+                </section>
+                
 
+
+
+                <section class="message-box-note">
+                    <p class="message-box-content">Значения X и Y будут автоматически округлены до ближайших разрешенных.</p>
+                </section>
                 
                 
                 <form id="form">
@@ -41,48 +58,29 @@
 
                             <section class="checkbox-values x">
 
-                                <input id="x-4" value="-4" name="x" type="checkbox">
-                                <label for="x-4">-4</label>
+                                <input value="-2" name="x" type="button">
+
+                                <input value="-1.5" name="x" type="button">
+
+                                <input value="-1" name="x" type="button">
+
+                                <input value="-0.5" name="x" type="button">
+
+                                <input value="0" name="x" type="button">
+
+                                <input value="1.5" name="x" type="button">
+
+                                <input value="2" name="x" type="button">
 
 
-                                <input id="x-3" value="-3" name="x" type="checkbox">
-                                <label for="x-3">-3</label>
-
-
-                                <input id="x-2" value="-2" name="x" type="checkbox">
-                                <label for="x-2">-2</label>
-
-
-                                <input id="x-1" value="-1" name="x" type="checkbox">
-                                <label for="x-1">-1</label>
-
-
-                                <input id="x0" value="0" name="x" type="checkbox">
-                                <label for="x0">0</label>
-
-
-                                <input id="x1" value="1" name="x" type="checkbox">
-                                <label for="x1">1</label>
-
-
-                                <input id="x2" value="2" name="x" type="checkbox">
-                                <label for="x2">2</label>
-
-
-                                <input id="x3" value="3" name="x" type="checkbox">
-                                <label for="x3">3</label>
-
-
-                                <input id="x4" value="4" name="x" type="checkbox">
-                                <label for="x4">4</label>
                             </section>
 
                         </section>
 
 
                         <section class="choose-values">
-                            <span class="line-title">Значение Y (из диапазона {-5..5}):</span>
-                            <input class="checkbox-values y" type="text" name="y" pattern="-{0,1}[0-9]+[\.,]{0,1}[0-9]*" required title="Введите целое число или десятичную дробь. В качестве дробного разделителя используйте запятую ',' или точку '.'">
+                            <span class="line-title">Значение Y (из диапазона (-3..3) ):</span>
+                            <input class="checkbox-values y" type="text" name="y" maxlength="10" pattern="-{0,1}[0-9]+[\.,]{0,1}[0-9]*" required title="Введите целое число или десятичную дробь. В качестве дробного разделителя используйте запятую ',' или точку '.'">
                         </section>
 
 
@@ -143,22 +141,22 @@
                     </thead>
 
                     <tbody>
-<!--                        <tr>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td class="server-answer-yes">1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                        </tr>-->
-<!--                        <tr>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td class="server-answer-no">1</td>-->
-<!--                            <td>1</td>-->
-<!--                            <td>1</td>-->
-<!--                        </tr>-->
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="server-answer-yes">YES</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2.132123</td>
+                            <td>12</td>
+                            <td class="server-answer-no">No</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -181,6 +179,6 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
         
-        <script src="js/script.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

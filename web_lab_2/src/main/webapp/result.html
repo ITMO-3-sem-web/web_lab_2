@@ -1,0 +1,93 @@
+<!--<%&#45;&#45;<%@ page contentType="text/html;charset=utf-8" %>&#45;&#45;%>-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab_2</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+<header>
+    <h1 class="header-title">Лабораторная работа №2 по Веб-программированию.</h1>
+    <p class="header-content">
+        <span class="line-title">Вариант:</span> 4553
+        <br>
+        <span class="line-title">Студенты:&nbsp;</span> Арина Стенина и Максим Монахов
+        <br>
+        <span class="line-title">Группа:&nbsp;&nbsp;&nbsp;</span> P3211
+
+    </p>
+</header>
+
+<main>
+    <article>
+
+
+        <canvas id="canvass" width="340" height="340">    <p>Your browser doesn't support canvas.</p>   </canvas>
+
+
+
+    </article>
+
+
+
+
+    <article>
+
+        <table id="result-table">
+            <thead>
+            <tr>
+                <th scope="col">X</th>
+                <th scope="col">Y</th>
+                <th scope="col">R</th>
+                <th scope="col">Точка попала в область</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="server-answer-yes">YES</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2.132123</td>
+                <td>12</td>
+                <td class="server-answer-no">No</td>
+
+            </tr>
+            </tbody>
+        </table>
+        
+        <a href="index.html">Отправить форму еще раз.</a>
+
+    </article>
+
+
+</main>
+
+
+<footer>
+    <p class="footer-text"> View code on GitHub</p>
+    <a href="https://github.com/ITMO-Web-2nd-year/web_lab_2" target="_blank"> <img class="github-link-img" src="resources/GitHub-Mark-32px.png"> </a>
+</footer>
+
+<!--
+        <script>
+            $(document).ready
+        </script>
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+<script src="js/result.js"></script>
+</body>
+</html>
