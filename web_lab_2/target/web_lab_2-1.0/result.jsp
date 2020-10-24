@@ -1,4 +1,6 @@
-<!--<%&#45;&#45;<%@ page contentType="text/html;charset=utf-8" %>&#45;&#45;%>-->
+<%@ page import="ru.arina.maxim.model.Point" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
 <!DOCTYPE html>
@@ -51,23 +53,48 @@
             </thead>
 
             <tbody>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td class="server-answer-yes">YES</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2.132123</td>
-                <td>12</td>
-                <td class="server-answer-no">No</td>
 
-            </tr>
+            <%
+                System.out.println(6);
+                ArrayList<Point> history = (ArrayList<Point>) request.getSession().getAttribute("history");
+                System.out.println(7);
+                System.out.println("history = \n" + history + "\n--------");
+
+
+
+                StringBuilder output = new StringBuilder();
+                Point point;
+                String resultClass = "";
+
+
+                for (int i = history.size() - 1; i >= 0; i--) {
+                    point = history.get(i);
+
+                    if (point.getResult().equals("ДА")) {
+                        resultClass = "server-answer-yes";
+                    } else {
+                        resultClass = "server-answer-no";
+                    }
+
+                    output.append(
+                            "<tr>" +
+
+                                    "<td>" + point.getX() + "</td>" +
+                                    "<td>" + point.getY() + "</td>" +
+                                    "<td>" + point.getR() + "</td>" +
+                                    String.format("<td class='%s'>", resultClass) + point.getResult() + "</td>" +
+
+                            "</tr>"
+                    );
+                }
+
+                out.println(output.toString());
+            %>
+
             </tbody>
         </table>
         
-        <a href="index.html">Отправить форму еще раз.</a>
+        <a href="index.jsp">Отправить форму еще раз.</a>
 
     </article>
 

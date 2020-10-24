@@ -1,3 +1,6 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <!DOCTYPE html>
 <html>
     
@@ -15,7 +18,7 @@
         <p class="message-box-content">The request doesn't have some of the necessary arguments.</p>
     </div>
     
-    <a class="link" href="index.html">Go to the start page</a>
+    <a class="link" href="index.jsp">Go to the start page</a>
     
  
     </body>
